@@ -39,7 +39,7 @@ jobs:
   build-test-macos-ish:
     strategy:
       matrix:
-        os: [macos-15, macos-14]
+        os: [macos-26, macos-26-large, macos-15, macos-15-intel, macos-14]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v5
